@@ -4,8 +4,8 @@
     ])
 !!}
 
-<div class="form-group">
-    <label for="recipient-name" class="control-label">Kelas:</label>
-    {!! Form::text('nama', null, ['class' => 'form-control', 'id' => 'nama', 'placeholder' => 'Masukan Nama Kelas']) !!}
-</div>
+    <div class="form-group">
+        <label for="recipient-name" class="control-label">Kelas:</label>
+        {!! Form::text('nama', null, ['class' => 'form-control', 'id' => 'nama', 'placeholder' => 'Masukan Nama Kelas']) !!}
+    </div>
 {!! Form::close() !!}
