@@ -21,6 +21,8 @@
     <link href="{{ asset('assets') }}/dist/css/style.min.css" rel="stylesheet">
     <!-- Dashboard 1 Page CSS -->
     <link href="{{ asset('assets') }}/dist/css/pages/dashboard1.css" rel="stylesheet">
+    <!--alerts CSS -->
+    <link href="{{ asset('assets') }}/node_modules/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -96,6 +98,9 @@
     <script src="{{ asset('assets') }}/dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="{{ asset('assets') }}/dist/js/custom.min.js"></script>
+    <!-- Sweet-Alert  -->
+    <script src="{{ asset('assets') }}/node_modules/sweetalert/sweetalert.min.js"></script>
+    <script src="{{ asset('assets') }}/node_modules/sweetalert/jquery.sweet-alert.custom.js"></script>
     <!-- ============================================================== -->
     <!-- This page plugins -->
     <!-- ============================================================== -->
