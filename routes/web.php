@@ -20,5 +20,12 @@ Route::group(['middleware' => ['auth']], function () {
 
     // Route Home
     Route::get('/home', 'HomeController@index')->name('home.index');
+
+
+    // Route Kelas
+    Route::resource('/kelas', 'KelasController')->except(['update', 'show', 'edit', 'destroy']);
+    Route::put('/kelas/{kelas}', 'KelasController@update')->name('kelas.update');
+    Route::get('/kelas/{kelas}/edit', 'KelasController@edit')->name('kelas.edit');
+    Route::delete('/kelas/{kelas}', 'KelasController@destroy')->name('kelas.destroy');
 });
 
