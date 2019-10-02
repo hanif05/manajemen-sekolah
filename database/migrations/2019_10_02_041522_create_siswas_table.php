@@ -13,8 +13,15 @@ class CreateSiswasTable extends Migration
      */
     public function up()
     {
-        Schema::create('siswas', function (Blueprint $table) {
+        Schema::create('siswa', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('kelas_id');
+            $table->string('nama', 150);
+            $table->string('tmpt_lahir', 50);
+            $table->date('tgl_lahir');
+            $table->string('jk', 20);
+            $table->string('alamat');
+            $table->text('foto');
             $table->timestamps();
         });
     }
@@ -26,6 +33,6 @@ class CreateSiswasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('siswas');
+        Schema::dropIfExists('siswa');
     }
 }
