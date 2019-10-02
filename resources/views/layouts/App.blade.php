@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets') }}/images/favicon.png">
     <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
@@ -64,6 +65,12 @@
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
         <!-- ============================================================== -->
+        <!-- Modal -->
+        <!-- ============================================================== -->
+        @include('layouts.includes._modal')
+        <!-- ============================================================== -->
+        <!-- End Modal -->
+        <!-- ============================================================== -->
         <!-- footer -->
         <!-- ============================================================== -->
         @include('layouts.includes._footer')
@@ -96,11 +103,15 @@
     <script src="{{ asset('assets') }}/node_modules/raphael/raphael-min.js"></script>
     <script src="{{ asset('assets') }}/node_modules/morrisjs/morris.min.js"></script>
     <script src="{{ asset('assets') }}/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- ============================================================== -->
+    <!--Form Script modal -->
+    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- ============================================================== -->
     <!-- Popup message jquery -->
-    <script src="{{ asset('assets') }}/node_modules/toast-master/js/jquery.toast.js"></script>
+    {{-- <script src="{{ asset('assets') }}/node_modules/toast-master/js/jquery.toast.js"></script> --}}
     <!-- Chart JS -->
     <script src="{{ asset('assets') }}/dist/js/dashboard1.js"></script>
-    <script src="{{ asset('assets') }}/node_modules/toast-master/js/jquery.toast.js"></script>
+    {{-- <script src="{{ asset('assets') }}/node_modules/toast-master/js/jquery.toast.js"></script> --}}
     @stack('scripts')
     <script>
         $(function(){
