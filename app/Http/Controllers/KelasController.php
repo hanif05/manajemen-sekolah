@@ -14,7 +14,7 @@ class KelasController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.kelas.index');
     }
 
     /**
@@ -24,7 +24,8 @@ class KelasController extends Controller
      */
     public function create()
     {
-        //
+        $data = new Kelas();
+        return view('pages.kelas.form', compact('data'));
     }
 
     /**

@@ -16,7 +16,7 @@
                     <ul aria-expanded="false" class="collapse">
                         <li><a href="#">Guru</a></li>
                         <li><a href="#">Siswa</a></li>
-                        <li><a href="#">Kelas</a></li>
+                        <li><a href="{{ route('kelas.index') }}">Kelas</a></li>
                     </ul>
                 </li>
                 <li> 
