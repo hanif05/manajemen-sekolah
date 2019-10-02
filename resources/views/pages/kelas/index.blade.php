@@ -24,22 +24,15 @@
                     </div>
                     <h4 class="card-title">Data Kelas</h4>
                     <div class="table-responsive">
-                        <table class="table table-striped color-table dark-table">
+                        <table class="table table-striped color-table dark-table" id="datatable">
                             <thead>
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Kelas</th>
-                                    <th>Ket</th>
-                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
+                                
                             </tbody>
                         </table>
                     </div>
@@ -49,3 +42,18 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+    <script>
+        $('#datatable').DataTable({
+            responsive: true,
+            processing: true,
+            serverSide: true,
+            ajax: "{{ route('table.kelas') }}",
+            columns: [
+                { data: 'DT_RowIndex', name: 'id' },
+                { data: 'nama', name: 'nama' }
+            ]
+        });
+    </script>
+@endpush

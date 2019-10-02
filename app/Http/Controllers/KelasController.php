@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Kelas;
 use Illuminate\Http\Request;
+use DataTables;
 
 class KelasController extends Controller
 {
@@ -82,5 +83,12 @@ class KelasController extends Controller
     public function destroy(Kelas $kelas)
     {
         //
+    }
+
+    public function dataTable()
+    {
+        $data = Kelas::query();
+
+        return DataTables::of($data)->addIndexColumn()->make(true);
     }
 }

@@ -23,6 +23,8 @@
     <link href="{{ asset('assets') }}/dist/css/pages/dashboard1.css" rel="stylesheet">
     <!--alerts CSS -->
     <link href="{{ asset('assets') }}/node_modules/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+    <!--DataTables CSS -->
+    <link href="{{ asset('assets') }}/node_modules/datatables/media/css/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -101,6 +103,8 @@
     <!-- Sweet-Alert  -->
     <script src="{{ asset('assets') }}/node_modules/sweetalert/sweetalert.min.js"></script>
     <script src="{{ asset('assets') }}/node_modules/sweetalert/jquery.sweet-alert.custom.js"></script>
+    <!-- This is data table -->
+    <script src="{{ asset('assets') }}/node_modules/datatables/datatables.min.js"></script>
     <!-- ============================================================== -->
     <!-- This page plugins -->
     <!-- ============================================================== -->
