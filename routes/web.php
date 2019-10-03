@@ -21,6 +21,10 @@ Route::group(['middleware' => ['auth']], function () {
     // Route Home
     Route::get('/home', 'HomeController@index')->name('home.index');
 
+    // Route Guru
+    Route::resource('/guru', 'GuruController')->except(['show', 'update']);
+    Route::post('/guru/{guru}', 'GuruController@update')->name('guru.update');
+    Route::get('/table/guru', 'GuruController@dataTable')->name('table.guru');
 
     // Route Kelas
     Route::resource('/kelas', 'KelasController')->except(['update', 'show', 'edit', 'destroy']);
@@ -28,5 +32,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::put('/kelas/{kelas}', 'KelasController@update')->name('kelas.update');
     Route::get('/kelas/{kelas}/edit', 'KelasController@edit')->name('kelas.edit');
     Route::get('/table/kelas', 'KelasController@dataTable')->name('table.kelas');
+
 });
 

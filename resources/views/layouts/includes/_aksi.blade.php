@@ -1,0 +1,2 @@
+<a href="{{ $url_edit }}" title="Edit {{ $data->nama }}"><i class="fa fa-pencil-alt"></i> | </a>
+<a href="{{ $url_destroy }}" class="btn-delete" title="Hapus {{ $data->nama }}"><i class="fa fa-trash-alt"></i></a>
