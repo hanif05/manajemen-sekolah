@@ -13,21 +13,20 @@ Aplikasi ini dibuat untuk persyaratan tes melamar pekerjaan.
 
 ## Instalasi
 
-git clone https://github.com/hanif05/manajemen-sekolah.git
-cd manajemen-sekolah
-composer install
-cp .env.example .env
-php artisan key:generate
-buka .env kemudian edit DB_DATABASE= namadbnya | DB_USERNAME= root | DB_PASSWORD= password jika db nya menggunakan password
-php artisan migrate --seed
-php artisan storage:link
-php artisan serve
+1. git clone https://github.com/hanif05/manajemen-sekolah.git
+2. cd manajemen-sekolah
+3. composer install
+4. cp .env.example .env
+5. php artisan key:generate
+6. buka .env kemudian edit DB_DATABASE= namadbnya | DB_USERNAME= root | DB_PASSWORD= password jika db nya menggunakan password
+7. php artisan migrate --seed
+8. php artisan storage:link
+9. php artisan serve
 
 ## Login
 
 Untuk Login Admin
-email = admin@gmail.com
-password = admin
+email = admin@gmail.com | password = admin
 
 ## License
 
