@@ -10,7 +10,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger waves-effect waves-light" id="modal-btn-save">Save changes</button>
+                <button type="button" class="btn btn-danger waves-effect waves-light" id="modal-save">Save changes</button>
             </div>
         </div>
     </div>
