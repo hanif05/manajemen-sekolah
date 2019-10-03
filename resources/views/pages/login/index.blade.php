@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets') }}/images/favicon.png">
-    <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+    <title>Aplikasi Manajemen Sekolah</title>
     
     <!-- page css -->
     <link href="{{ asset('assets') }}/dist/css/pages/login-register-lock.css" rel="stylesheet">
@@ -66,11 +66,11 @@
                             <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="submit">Login</button>
                         </div>
                     </div>
-                    <div class="form-group m-b-0">
+                    {{-- <div class="form-group m-b-0">
                         <div class="col-sm-12 text-center">
                             Don't have an account? <a href="pages-register2.html" class="text-primary m-l-5"><b>Sign Up</b></a>
                         </div>
-                    </div>
+                    </div> --}}
                 </form>
             </div>
         </div>

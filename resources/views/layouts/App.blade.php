@@ -11,7 +11,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets') }}/images/favicon.png">
-    <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+    <title>Aplikasi Manajemen Sekolah</title>
     <!-- This page CSS -->
     <!-- chartist CSS -->
     <link href="{{ asset('assets') }}/node_modules/morrisjs/morris.css" rel="stylesheet">
