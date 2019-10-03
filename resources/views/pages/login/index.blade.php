@@ -42,6 +42,12 @@
     <section id="wrapper" class="login-register login-sidebar" style="background-image:url({{ asset('assets') }}/images/background/login-register.jpg);">
         <div class="login-box card">
             <div class="card-body">
+                @if(session('error'))
+                    <div class="alert alert-danger" role="alert" >
+                        {{ session('error') }}
+                    </div>
+
+                @endif
                 <form class="form-horizontal form-material text-center" id="loginform" action="{{ route('login.validate') }}" method="POST">
                     @csrf
                     <a href="javascript:void(0)" class="db"><img src="{{ asset('assets') }}/images/logo-icon.png" alt="Home" /><br/><img src="{{ asset('assets') }}/images/logo-text.png" alt="Home" /></a>

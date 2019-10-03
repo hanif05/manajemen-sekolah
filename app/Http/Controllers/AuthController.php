@@ -17,13 +17,13 @@ class AuthController extends Controller
         if(Auth::attempt(request()->only('email', 'password'))){
             return redirect()->route('home.index');
         }
-        return redirect()->route('login.index');
+        return redirect()->route('login')->with('error', 'Email atau Password Anda Salah!');
     }
 
     public function logout()
     {
         Auth::logout();
 
-        return redirect()->route('login.index');
+        return redirect()->route('login');
     }
 }
