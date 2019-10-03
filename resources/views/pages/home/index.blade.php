@@ -101,11 +101,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
