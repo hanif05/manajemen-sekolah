@@ -39,7 +39,7 @@ $('#modal-save').click(function(event){
             $('#responsive-modal').modal('hide');
             $('#datatable').DataTable().ajax.reload();
 
-            swal({
+            Swal.fire({
                 type: 'success',
                 title: 'Berhasil',
                 text: 'Data Berhasil Disimpan'
@@ -67,7 +67,7 @@ $('body').on('click', '.btn-delete', function(event){
         csrf_token = $('meta[name="csrf-token"]').attr('content');
 
 
-    swal({
+    Swal.fire({
         title: 'Peringatan!',
         text: 'Apakah Anda Yakin Ingin ' + judul + '?',
         type: 'warning',
@@ -89,14 +89,14 @@ $('body').on('click', '.btn-delete', function(event){
                     success: function(response){
                         $('#datatable').DataTable().ajax.reload();
 
-                        swal({
+                        Swal.fire({
                             type: 'success',
                             title: 'Berhasil',
                             text: 'Data Berhasil Dihapus'
                         });
                     },
                     error: function(xhr){
-                        swal({
+                        Swal.fire.fire({
                             type: 'error',
                             title: 'Ooopppss...',
                             text: 'Something Wrong!'

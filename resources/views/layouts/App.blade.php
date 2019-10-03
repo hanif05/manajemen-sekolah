@@ -103,6 +103,7 @@
     <!-- Sweet-Alert  -->
     <script src="{{ asset('assets') }}/node_modules/sweetalert/sweetalert.min.js"></script>
     <script src="{{ asset('assets') }}/node_modules/sweetalert/jquery.sweet-alert.custom.js"></script>
+    @include('sweetalert::alert')
     <!-- This is data table -->
     <script src="{{ asset('assets') }}/node_modules/datatables/datatables.min.js"></script>
     <!-- ============================================================== -->
