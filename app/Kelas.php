@@ -8,7 +8,7 @@ class Kelas extends Model
 {
     protected $table = 'kelas';
 
-    protected $guarded = [];
+    protected $fillable = ['nama'];
 
     public function siswa()
     {

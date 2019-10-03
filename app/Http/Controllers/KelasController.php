@@ -37,7 +37,12 @@ class KelasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'nama' => 'required|string|max:5'
+        ]);
+
+        $data = Kelas::create($request->all());
+        return $data;
     }
 
     /**
@@ -59,7 +64,8 @@ class KelasController extends Controller
      */
     public function edit(Kelas $kelas)
     {
-        //
+        $data = $kelas;
+        return view('pages.kelas.form', compact('data'));
     }
 
     /**
@@ -71,7 +77,11 @@ class KelasController extends Controller
      */
     public function update(Request $request, Kelas $kelas)
     {
-        //
+        $this->validate($request, [
+            'nama' => 'required|string|max:20'
+        ]);
+
+        $kelas->update(request()->all());
     }
 
     /**
@@ -82,13 +92,21 @@ class KelasController extends Controller
      */
     public function destroy(Kelas $kelas)
     {
-        //
+        $kelas->delete();
     }
 
     public function dataTable()
     {
         $data = Kelas::query();
 
-        return DataTables::of($data)->addIndexColumn()->make(true);
+        return DataTables::of($data)
+            ->addColumn('aksi', function($data){
+                return view('layouts.includes._action', [
+                    'data' => $data,
+                    'url_edit' => route('kelas.edit', $data->id),
+                    'url_destroy' => route('kelas.destroy', $data->id)
+                ]);
+            })
+            ->addIndexColumn()->rawColumns(['aksi'])->make(true);
     }
 }

@@ -29,6 +29,7 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Kelas</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -52,7 +53,8 @@
             ajax: "{{ route('table.kelas') }}",
             columns: [
                 { data: 'DT_RowIndex', name: 'id' },
-                { data: 'nama', name: 'nama' }
+                { data: 'nama', name: 'nama' },
+                { data: 'aksi', name: 'aksi' }
             ]
         });
     </script>

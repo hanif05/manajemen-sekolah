@@ -24,9 +24,9 @@ Route::group(['middleware' => ['auth']], function () {
 
     // Route Kelas
     Route::resource('/kelas', 'KelasController')->except(['update', 'show', 'edit', 'destroy']);
+    Route::delete('/kelas/{kelas}', 'KelasController@destroy')->name('kelas.destroy');
     Route::put('/kelas/{kelas}', 'KelasController@update')->name('kelas.update');
     Route::get('/kelas/{kelas}/edit', 'KelasController@edit')->name('kelas.edit');
-    Route::delete('/kelas/{kelas}', 'KelasController@destroy')->name('kelas.destroy');
     Route::get('/table/kelas', 'KelasController@dataTable')->name('table.kelas');
 });
 
