@@ -26,6 +26,11 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/guru/{guru}', 'GuruController@update')->name('guru.update');
     Route::get('/table/guru', 'GuruController@dataTable')->name('table.guru');
 
+    // Route Siswa
+    Route::resource('/siswa', 'SiswaController');
+    Route::post('/siswa/{siswa}', 'SiswaController@update')->name('siswa.update');
+    Route::get('/table/siswa', 'SiswaController@dataTable')->name('table.siswa');
+
     // Route Kelas
     Route::resource('/kelas', 'KelasController')->except(['update', 'show', 'edit', 'destroy']);
     Route::delete('/kelas/{kelas}', 'KelasController@destroy')->name('kelas.destroy');

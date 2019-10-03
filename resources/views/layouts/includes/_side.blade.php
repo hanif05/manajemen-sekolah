@@ -15,7 +15,7 @@
                 <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-database"></i><span class="hide-menu">Master</span></a>
                     <ul aria-expanded="false" class="collapse">
                         <li><a href="{{ route('guru.index') }}">Guru</a></li>
-                        <li><a href="#">Siswa</a></li>
+                        <li><a href="{{ route('siswa.index') }}">Siswa</a></li>
                         <li><a href="{{ route('kelas.index') }}">Kelas</a></li>
                     </ul>
                 </li>
