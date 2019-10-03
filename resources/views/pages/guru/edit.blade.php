@@ -47,8 +47,8 @@
                             <div class="form-group">
                                 <label>Jenis Kelamin:</label>
                                 <select class="form-control" name="jk">
-                                    <option value="Laki-Laki">Laki-Laki</option>
-                                    <option value="Perempuan">Perempuan</option>
+                                        <option value="Laki-laki" @if($guru->jk == "Laki-laki") selected @endif>Laki-laki</option>
+                                        <option value="Perempuan" @if($guru->jk == "Perempuan") selected @endif>Perempuan</option>
                                 </select>
                             </div>
                             <div class="form-group">
