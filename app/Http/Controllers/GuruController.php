@@ -160,7 +160,9 @@ class GuruController extends Controller
 
     public function dataTable()
     {
-        $data = Guru::join('kelas', 'guru.kelas_id', '=', 'kelas.id')->select('guru.id', 'guru.nama', 'kelas.nama_kelas', 'guru.tmpt_lahir', 'guru.tgl_lahir', 'guru.jk', 'guru.no_hp', 'guru.alamat', 'guru.foto');
+        $data = Guru::join('kelas', 'guru.kelas_id', '=', 'kelas.id')
+                    ->join('users', 'guru.user_id', '=', 'users.id')
+                    ->select('guru.id', 'guru.nama', 'users.email', 'kelas.nama_kelas', 'guru.tmpt_lahir', 'guru.tgl_lahir', 'guru.jk', 'guru.no_hp', 'guru.alamat', 'guru.foto');
 
         return DataTables::of($data)
             ->addColumn('aksi', function($data){

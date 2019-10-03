@@ -32,6 +32,7 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama</th>
+                                    <th>Email</th>
                                     <th>Tempat Lahir</th>
                                     <th>Tanggal Lahir</th>
                                     <th>Jenis Kelamin</th>
@@ -64,6 +65,7 @@
             columns: [
                 { data: 'DT_RowIndex', name: 'id' },
                 { data: 'nama', name: 'guru.nama' },
+                { data: 'email', name: 'users.email' },
                 { data: 'tmpt_lahir', name: 'tmpt_lahir'},
                 { data: 'tgl_lahir', name: 'tgl_lahir'},
                 { data: 'jk', name: 'jk'},
