@@ -16,6 +16,7 @@ class CreateSiswasTable extends Migration
         Schema::create('siswa', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('kelas_id');
+            $table->unsignedBigInteger('user_id');
             $table->string('nama', 150);
             $table->string('tmpt_lahir', 50);
             $table->date('tgl_lahir');
