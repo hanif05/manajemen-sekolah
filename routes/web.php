@@ -20,6 +20,7 @@ Route::group(['middleware' => ['auth']], function () {
 
     // Route Home
     Route::get('/home', 'HomeController@index')->name('home.index');
+    Route::get('/table/user', 'HomeController@dataTable')->name('table.user');
 
     // Route Guru
     Route::resource('/guru', 'GuruController')->except(['show', 'update']);
