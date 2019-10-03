@@ -20,6 +20,7 @@ class CreateSiswasTable extends Migration
             $table->string('tmpt_lahir', 50);
             $table->date('tgl_lahir');
             $table->string('jk', 20);
+            $table->string('no_hp', 13);
             $table->string('alamat');
             $table->text('foto')->nullable();
             $table->timestamps();

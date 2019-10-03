@@ -19,6 +19,7 @@ class CreateGurusTable extends Migration
             $table->string('nama', 150);
             $table->string('tmpt_lahir', 50);
             $table->date('tgl_lahir');
+            $table->string('no_hp', 13);
             $table->string('jk', 20);
             $table->string('alamat');
             $table->text('foto')->nullable();
