@@ -9,7 +9,7 @@
 
 ## Aplikasi Manajemen Sekolah
 
-Aplikasi ini dibuat untuk persyaratan tes melamar pekerjaan.
+Aplikasi ini dibuat untuk persyaratan testing melamar pekerjaan.
 
 ## Instalasi
 
