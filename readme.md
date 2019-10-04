@@ -28,10 +28,6 @@ Aplikasi ini dibuat untuk persyaratan tes melamar pekerjaan.
 Untuk Login Admin
 email = admin@gmail.com | password = admin
 
-## Form Lamaran & Tes essai
-
-untuk form lamaran dan essai didalam folder dengan nama lamaran-test
-
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
